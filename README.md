@@ -1,24 +1,7 @@
-# icnea
+# ¡Hola Eloi!
 
-## Project setup
-```
-npm install
-```
+## Antes de empezar
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Me falta la lógica de la tienda, ya que aún tengo que mirar como funcionan un par de cosas en Vue. 
+Por esto segurmente te darás cuenta de que los valores són constantes 'se que se hace mediante {{}}'. Este proyecto lo he realizado conjuntamente con el curso de udemy (Master en Frameworks JavaScript de Víctor Robles). Espero que vaya muy bien y un fuerte abrazo!
+Saludos Jesús.
