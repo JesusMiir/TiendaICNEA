@@ -2,7 +2,8 @@
 
 ## Antes de empezar
 
-Me falta la lógica de la tienda, ya que aún tengo que mirar como funcionan un par de cosas en Vue.  
-Por esto segurmente te darás cuenta de que los valores són constantes. Intentaré subir la versión correcta mañana por la mañana. Espero que vaya muy bien y un fuerte abrazo!
+He tenido problemas con el tema de las variables de componente. Es decir el sumador solamente me suma una vez. 
+El router lo he creado pero no me lo detecta, he revisado varias veces el códio. Intenatré buscar los errores
+y solucionarlos.
 Saludos Jesús.
 
