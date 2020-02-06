@@ -11,13 +11,13 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="home">Inicio</a>
                 </li>
                 <li>
-                    <a href="blog.html">Mis Productos</a>
+                    <a href="about-us">Sobre Nosotros</a>
                 </li>
                 <li>
-                    <a href="formulario.html">Comprar</a>
+                    <a href="buys">Comprar</a>
                 </li>                          
             </ul>
         </nav>

@@ -1,7 +1,14 @@
 <template>
     <section id="content">
-
         <div class="container">
+             <br><br>
+            <div class="row">
+               
+                    <div class="col-md-6"><h3>Número de Productos: {{number_of_products}}</h3></div>
+                    <div class="col-md-6"><h3>Precio Total: {{price}}</h3></div>
+            
+            </div>
+             <br><br>
             <div class="row">
                 <div class="col-md-12">
                     <article class="article-item" id="article-template">
@@ -14,15 +21,15 @@
                             Precio: 2,75€
                         </span>
                         <span class="date">
-                            Unidades Compradas: 0
+                            Unidades Compradas: {{units_apple}}
                         </span>
                         <br>
                         <div class="row">
                             <div class="col-md-1">
-                                <button>+</button>
+                                <button v-on:click="addApple">+</button>
                             </div>    
                             <div class="col-md-1">
-                                <button>-</button>
+                                <button v-on:click="removeApple">-</button>
                             </div> 
                         </div>
                          <div class="clearfix"></div>
@@ -39,15 +46,15 @@
                             Precio: 0,36€
                         </span>
                         <span class="date">
-                            Unidades Compradas: 0
+                            Unidades Compradas: {{units_tomato}}
                         </span>
                         <br>
                         <div class="row">
                             <div class="col-md-1">
-                                <button>+</button>
+                                <button v-on:click="addTomato">+</button>
                             </div>    
                             <div class="col-md-1">
-                                <button>-</button>
+                                <button v-on:click="removeTomato">-</button>
                             </div> 
                         </div>
 
@@ -65,15 +72,15 @@
                             Precio: 0,60€
                         </span>
                         <span class="date">
-                            Unidades Compradas: 0
+                            Unidades Compradas: {{units_orange}}
                         </span>
                         <br>
                         <div class="row">
                             <div class="col-md-1">
-                                <button>+</button>
+                                <button v-on:click="addOrange">+</button>
                             </div>    
                             <div class="col-md-1">
-                                <button>-</button>
+                                <button v-on:click="removeOrange">-</button>
                             </div> 
                         </div>
 
@@ -91,29 +98,91 @@
                             Precio: 3,60€
                         </span>
                         <span class="date">
-                            Unidades Compradas: 0
+                            Unidades Compradas: {{units_pear}}
                         </span>
                         <br>
                         <div class="row">
                             <div class="col-md-1">
-                                <button>+</button>
+                                <button v-on:click="addPear">+</button>
                             </div>    
                             <div class="col-md-1">
-                                <button>-</button>
+                                <button v-on:click="removePear">-</button>
                             </div> 
                         </div>
 
                          <div class="clearfix"></div>
                     </article>
+                    <br><br><br><br>
                 </div>
             </div>
         </div>
-        
     </section>
 </template>
 
 <script>
+
     export default {
-    name: 'LastProducts' 
+        name: 'LastProducts',
+        data() {
+            return {
+                number_of_products: 0,
+                price: 0,
+                units_apple: 0,
+                units_tomato: 0,
+                units_orange: 0,
+                units_pear: 0,
+            }
+        },
+        methods:{
+            addApple() {
+                this.number_of_products++;
+                this.price += 2.75;
+                this.units_apple++;
+            },
+            removeApple() {
+                if (this.units_apple > 0) {
+                    this.number_of_products--;
+                    this.price -= 2.75;
+                    this.units_apple--;
+                }
+            },
+            addTomato() {
+                this.number_of_products++;
+                this.price += 0.36;
+                this.units_tomato++;
+            },
+            removeTomtato() {
+                if (this.units_tomato > 0) {
+                    this.number_of_products--;
+                    this.price -= 0.36;
+                    this.units_tomato--;
+                }
+            },
+            addOrange() {
+                this.number_of_products++;
+                this.price += 0.6;
+                this.units_orange++;
+            },
+            romveOrange() {
+                if (this.units_organge > 0) {
+                    this.number_of_products--;
+                    this.price -= 0.6;
+                    this.units_orange--;
+                }
+            },
+            addPear() {
+                this.number_of_products++;
+                this.price += 3.6;
+                this.units_pear++;
+            },
+            removePear() {
+                if (this.units_pear > 0) {
+                    this.number_of_products--;
+                    this.price -= 3.6;
+                    this.units_pear--;
+                }
+            }
+        }
     }
+    
 </script>

@@ -2,22 +2,22 @@
   <div id="app">
     <HeaderComponent></HeaderComponent>
     <Slider></Slider>
-    <Accountant></Accountant>
+    <!--<router-view></router-view>-->
     <LastProducts></LastProducts>
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
-import Accountant from './components/Accountant.vue';
 import Slider from './components/Slider.vue';
-import LastProducts from './components/LastProducts';
+import LastProducts from './components/LastProducts.vue';
+
+
 export default {
   name: 'app',
   components: {
     HeaderComponent,
     Slider,
-    Accountant,
     LastProducts
   }
 }
