@@ -52,16 +52,15 @@
             ]};
         },
         methods:{
-            change_qtty_product(id) {
-                if (this.products[id].qtty < 0) 
-                    this.products[id].qtty = 0;
-            }
+            
         },
         computed: {
             value_of_price() {
                 let total_price = 0;
-                for (let product of this.products)
+                for (let product of this.products) {
+                    if (product.qtty < 0) product.qtty = 0;
                     total_price += (product.price * product.qtty);
+                }
                 return total_price;
             }
         }
