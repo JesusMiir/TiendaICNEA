@@ -1,5 +1,5 @@
 <template>
-    <section id="content">
+    <section>
         <div class="container">
              <br><br>
             <div class="row">
@@ -13,7 +13,8 @@
                 <div class="col-md-12" v-for="product of products" :key="product.name">
                     <article class="article-item" id="article-template">
                         <div class="image-wrap">
-                            <img src="../assets/img/Frutas.jpg" alt="Pera" />
+                            <!--<img v-bind:src="product.img" alt="Fruta" />-->
+                            <img src="../assets/img/Frutas.jpg" alt="Frutas"/>
                         </div>
 
                         <h2>{{product.name}}</h2>
@@ -45,10 +46,10 @@
             return{
             number_of_products: 0,
             products: [
-                {id:0, name: 'Manzana', price: 2.75, qtty: 0},
-                {id:1, name: 'Tomate', price: 0.36, qtty: 0},
-                {id:2, name: 'Naranja', price: 0.60, qtty: 0},
-                {id:3, name: 'Pera', price: 3.60, qtty: 0},
+                {id:0, name: 'Manzana', price: 2.75, qtty: 0, img: '../assets/img/Manzana.jpg'},
+                {id:1, name: 'Tomate', price: 0.36, qtty: 0, img: '../assets/img/Tomate.jpg'},
+                {id:2, name: 'Naranja', price: 0.60, qtty: 0, img: '../assets/img/Naranja.jpg'},
+                {id:3, name: 'Pera', price: 3.60, qtty: 0, img: '../assets/img/Pera.jpg'},
             ]};
         },
         methods:{

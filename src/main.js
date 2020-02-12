@@ -8,6 +8,22 @@ import Buy from './components/Buy.vue';
 
 Vue.config.productionTip = false
 
+//Service Worker
+
+// ERROR: console.log no me funciona y he indicado alert.
+if('serviceWorker' in navigator) {
+  alert('Puedes usar serviceWorker');
+  navigator.serviceWorker.register('./sw.js')
+                         .then(res => alert('serviceWorker cargado correctamente', res))
+                         .catch(err => alert('serviceWorker no cargado correctamente', err));
+}
+else {
+  alert('No puedes usar serviceWorker');
+}
+
+
+//Router
+
 Vue.use(VueRouter);
 
 const routes = [

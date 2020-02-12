@@ -1,27 +1,32 @@
 <template>
   <header id="header">
     <div class="center">
-        <!-- LOGO -->
-        <div id="logo">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- LOGO -->
+          <div id="logo">
             <img src="../assets/logo.png" class="app-logo" alt="Logotipo" />
+          </div>
           
-        </div>
-        
-        <!-- MENU -->
-        <nav id="menu">
-            <ul>
-                <li>
-                    <a href="home">Inicio</a>
-                </li>
-                <li>
-                    <a href="about-us">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="buys">Comprar</a>
-                </li>                          
-            </ul>
-        </nav>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+           <!-- MENU -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Comprar</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
         <!--LIMPIAR FLOTADOS-->
         <div class="clearfix"></div>
     </div>
