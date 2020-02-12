@@ -1,8 +1,9 @@
-# ¡Hola Eloi!
+# Tienda Online Vue
 
 ## Antes de empezar
  
-El router lo he creado pero no me lo detecta. Hay el código creado por si lo 
-quieres mirar, muchas gracias.
-Saludos Jesús.
+- Hay la estructura del router pero no me lo detectó así que esta comentado. 
+- Hay la estructura de una aplicación PWA pero hay cosas a mejorar.
+
+
 
